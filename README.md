@@ -11,3 +11,7 @@ Implement a valve controller with a ESP8266 WIFI, and Arduino Cloud
 [Ks0354 Keyestudio ESP8266 WI-FI Development Board](https://wiki.keyestudio.com/Ks0354_Keyestudio_ESP8266_WI-FI_Development_Board)
 
 [US Solid - Motorized Ball valve](https://ussolid.com/content/JFMSV/JFMSV-User-manual.pdf)
+
+## Arduino Cloud
+
+Setup based on documentation [Arduino Nano ESP32 IoT Cloud Setup Guide](https://docs.arduino.cc/tutorials/nano-esp32/cloud-setup)

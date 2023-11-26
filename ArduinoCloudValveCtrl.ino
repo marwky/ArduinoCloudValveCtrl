@@ -1,4 +1,5 @@
 #include "ESP8266WiFi.h"
+#include "secrets/wifi-config.h"
 
 void setup() {
   Serial.begin(115200);
@@ -9,10 +10,17 @@ void setup() {
   delay(100);
 
   Serial.println("Setup done");
-  
 }
 
 void loop() {
+
+
+  // Wait a bit before scanning again
+  delay(5000);
+}
+
+void scan_network(void)
+{
   Serial.println("scan start");
 
   // WiFi.scanNetworks will return the number of networks found
@@ -38,7 +46,4 @@ void loop() {
     }
   }
   Serial.println("");
-
-  // Wait a bit before scanning again
-  delay(5000);
 }
