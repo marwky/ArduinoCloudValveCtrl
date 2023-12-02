@@ -55,11 +55,11 @@ void loop() {
   
   if(valve1)
   {
-    digitalWrite(ledPin, HIGH);
+    digitalWrite(ledPin, LOW);
   }
   else
   {
-    digitalWrite(ledPin, LOW);
+    digitalWrite(ledPin, HIGH);
   }
   
   if(valve2)
