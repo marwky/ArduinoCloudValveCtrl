@@ -61,7 +61,7 @@ Google test implemented to run unit test on firmware components.
 Install JAVA:
 
 ```bash
-sudo apt-get update`
+sudo apt-get update
 sudo apt-get install default-jre
 ```
 
@@ -100,7 +100,7 @@ Realized with [DigiKey - Scheme-it](https://www.digikey.com/en/schemeit/project)
 
 By default valves are de-energized
 
-| RY2 | RY1 | Motorized ball valve | YW - BU |
+| RY2 | RY1 | Motorized ball valve | YW / BU |
 | --- | --- |  ---                 | ---     |
 | 0   | 0   | motionless           |  0V     |
 | 0   | 1   | open                 |  12V    |
@@ -116,3 +116,4 @@ By default valves are de-energized
 | fully close          | 0                 | 1                  |
 | error                | 1                 | 1                  |
 
+**error** : Contacts are stuck or wires is shorted.
