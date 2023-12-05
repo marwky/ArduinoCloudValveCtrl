@@ -47,3 +47,9 @@ https://forum.arduino.cc/t/errors-compiling-arduinoiotcloud-examples/877136
 Needs to use : esp8266 by ESP8266 version 2.5.0
 
 Select board : NodeMCU 1.0 (ESP-12E Module) (esp8266)
+
+## Software develop setup
+
+`sudo apt  install cmake`
+`sudo apt-get install libpthread-stubs0-dev`
+
