@@ -22,6 +22,7 @@ Needs to install: [ArduinoIoTCloud library](https://www.arduino.cc/reference/en/
 
 In "Set device flavours" use default but change "Reset Method".
 
+```text
 Generic ESP8266 Module flavours
 Upload Speed: 115200
 CPU Frequency: 80 MHz
@@ -37,12 +38,11 @@ VTables: Flash
 Exceptions: Disabled
 Builtin Led: 2
 Erase Flash: Only Sketch
+```
 
-
-## Board support 
+## Board support
 
 https://forum.arduino.cc/t/errors-compiling-arduinoiotcloud-examples/877136
-
 
 Needs to use : esp8266 by ESP8266 version 2.5.0
 
@@ -50,6 +50,69 @@ Select board : NodeMCU 1.0 (ESP-12E Module) (esp8266)
 
 ## Software develop setup
 
+Google test implemented to run unit test on firmware components.
+
+### CMake
+
 `sudo apt  install cmake`
-`sudo apt-get install libpthread-stubs0-dev`
+
+### PlantUML
+
+Install JAVA:
+
+```bash
+sudo apt-get update`
+sudo apt-get install default-jre
+```
+
+Get PlantUML jar file 
+
+`wget https://netcologne.dl.sourceforge.net/project/plantuml/plantuml.jar`
+
+Create a Shell Script:
+
+```bash
+#!/bin/bash
+java -jar /path/to/plantuml.jar "$@"
+```
+
+Save the file, make it executable with chmod +x plantuml, and move it to a directory in your PATH (e.g., /usr/local/bin).
+
+## Running tests
+
+Only one target named **tests**.
+
+```bash
+mkdir build
+cd build
+cmake ..
+cmake --build . 
+./tests/tests
+```
+
+## Schematic
+
+Realized with [DigiKey - Scheme-it](https://www.digikey.com/en/schemeit/project)
+
+![Valve power control](docs/valve-circuit.png)
+
+### Valve power control
+
+By default valves are de-energized
+
+| RY2 | RY1 | Motorized ball valve | YW - BU |
+| --- | --- |  ---                 | ---     |
+| 0   | 0   | motionless           |  0V     |
+| 0   | 1   | open                 |  12V    |
+| 1   | 0   | close                | -12V    |
+| 1   | 1   | motionless           |  0V     |
+
+### Valves inputs
+
+| Motorized ball valve | Open limit switch | Close limit switch |
+| ---                  | ---               | ---                |
+| open                 | 0                 | 0                  |
+| fully open           | 1                 | 0                  |
+| fully close          | 0                 | 1                  |
+| error                | 1                 | 1                  |
 
