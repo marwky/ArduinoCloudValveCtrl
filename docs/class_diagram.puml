@@ -1,0 +1,31 @@
+@startuml
+
+class relay {
+    open()
+    close()
+}
+
+enum valve_status_t
+{
+    open
+    fully_open
+    fully_close
+    error                
+}
+
+class valve {
+    open()
+    close()
+    get_status(): valve_status_t
+    stateToString(): String
+}
+
+class valve_ctrl {
+}
+
+valve "1" o-- "2" relay
+valve -- valve_status_t
+valve_ctrl "1" *-- "3" valve
+
+
+@enduml
