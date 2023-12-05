@@ -1,4 +1,4 @@
-@startuml
+@startuml Class Diagram
 
 class relay {
     open()
@@ -20,12 +20,8 @@ class valve {
     stateToString(): String
 }
 
-class valve_ctrl {
-}
-
 valve "1" o-- "2" relay
 valve -- valve_status_t
-valve_ctrl "1" *-- "3" valve
 
 
 @enduml

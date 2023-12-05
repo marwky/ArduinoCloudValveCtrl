@@ -1,0 +1,9 @@
+@startuml Sequence Diagram
+
+client --> valve : open()
+...
+client --> client : loop() 
+client --> valve : getStatus()
+
+
+@enduml
