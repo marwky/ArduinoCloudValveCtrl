@@ -17,17 +17,6 @@
         }
     ],
     "buildPresets": [
-        {
-            "name": "build-unit-test",
-            "hidden": true,
-            "configurePreset": "unit-test"
-        },
-        {
-            "name": "unit-test",
-            "description": "",
-            "displayName": "",
-            "configurePreset": "unit-test"
-        }
     ],
     "testPresets": [
         {
