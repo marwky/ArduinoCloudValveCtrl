@@ -30,7 +30,7 @@ Crystal Frequency: 26 MHz
 Flash Size: 512K (no SPIFFS)
 Flash Mode: DOUT (compatible)
 Flash Frequency: 40MHz
-**Reset Method: nodemcu**
+Reset Method: nodemcu
 Debug port: Disabled
 Debug Level: None
 lwIP Variant: v2 Lower Memory
@@ -117,3 +117,11 @@ By default valves are de-energized
 | error                | 1                 | 1                  |
 
 **error** : Contacts are stuck or wires is shorted.
+
+## Input protection
+
+https://www.digikey.com/en/articles/protecting-inputs-in-digital-electronics
+
+## Consumption
+
+Motorized Ball Valve 1", 12VDC , 140mA

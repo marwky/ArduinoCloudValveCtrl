@@ -2,7 +2,8 @@
 
 # List your source files for the library
 set(SOURCES
-    my_math.cpp  # Replace with your actual source files
+    my_math.cpp
+    valve.cpp
 )
 
 add_library(my_math ${SOURCES})

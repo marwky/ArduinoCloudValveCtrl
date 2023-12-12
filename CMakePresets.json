@@ -1,0 +1,40 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 16,
+        "patch": 3
+    },
+    "configurePresets": [
+        {
+            "name": "unit-test",
+            "displayName": "Debug",
+            "generator": "Unix Makefiles",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "build-unit-test",
+            "hidden": true,
+            "configurePreset": "unit-test"
+        },
+        {
+            "name": "unit-test",
+            "description": "",
+            "displayName": "",
+            "configurePreset": "unit-test"
+        }
+    ],
+    "testPresets": [
+        {
+            "name": "unit-test-debug",
+            "description": "",
+            "displayName": "",
+            "configurePreset": "unit-test"
+        }
+    ]
+}
