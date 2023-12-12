@@ -8,6 +8,8 @@ project(UnitTests)
 set(SOURCES
     test_main.cpp
     test_valve.cpp
+    test_relay.cpp
+    test_limit_switch.cpp
     )
 
 add_executable(tests ${SOURCES})

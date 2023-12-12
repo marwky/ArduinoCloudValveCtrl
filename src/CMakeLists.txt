@@ -2,6 +2,8 @@
 
 set(SOURCES
     valve.cpp
+    relay.cpp
+    limit_switch.cpp
 )
 
 add_library(valve_controller ${SOURCES})
