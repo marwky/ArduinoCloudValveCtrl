@@ -7,7 +7,6 @@ project(UnitTests)
 # List your source files for the library
 set(SOURCES
     test_main.cpp
-    test_my_math.cpp
     test_valve.cpp
     )
 
@@ -15,7 +14,7 @@ add_executable(tests ${SOURCES})
 
 # Link the test executable with your library and Google Test
 target_link_libraries(tests PRIVATE 
-    my_math
+    valve_controller
     gtest)
 
 # Include directories for the tests
