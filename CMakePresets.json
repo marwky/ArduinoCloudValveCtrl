@@ -1,5 +1,5 @@
 {
-    "version": 3,
+    "version": 6,
     "cmakeMinimumRequired": {
         "major": 3,
         "minor": 16,
@@ -17,6 +17,12 @@
         }
     ],
     "buildPresets": [
+        {
+            "name": "build-unit-test-debug",
+            "description": "",
+            "displayName": "",
+            "configurePreset": "unit-test"
+        }
     ],
     "testPresets": [
         {
